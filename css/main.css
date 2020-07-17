@@ -131,11 +131,32 @@ nav {
 
 /* main */
 main {
+  background-color: chocolate;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.firstArticle {
+  background-image: url(../img/pop_vi.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.secondArticle {
+  background-image: url(../img/montre_gameboy.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.thirdArticle {
+  background-image: url(../img/mug_gogeta.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
 
 /* footer */
 footer ul {
@@ -143,11 +164,12 @@ footer ul {
 }
 
 footer {
+  background-color: brown;
   display: flex;
   justify-content: center;
 }
-}
-  
+
+
 
 /* Index */
 
