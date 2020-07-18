@@ -95,10 +95,11 @@ p {
   margin: 10px;
 }
 
-/* Utility classes */
-/* .mainBg {
-  background-color: green;
-} */
+/* font for name of company */
+@font-face {
+  font-family: "Retronoid";
+    src:url("Retronoid.ttf");      
+}
 
 /* body */
 body {
@@ -106,8 +107,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-
 
 /* Header */
 header {
@@ -119,87 +118,121 @@ header {
 }
 
 header h1 {
-
+  font-family: "Retronoid", Arial, serif;
+  color:greenyellow;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Nav */
 nav {
-  background-color: aqua;
+  background-color: #748cab;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
 }
 
 /* main */
 main {
+  background-color: #c5c3c6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
+}
+
+/* first arctile of index */
+.firstArticle {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* second article of index */
+.secondArticle {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* third article of index */
+.thirdArticle {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* title (suivez nous) of footer */
+footer h1 {
+  margin: 10px;
 }
 
 
-/* footer */
+/* all footer */
+footer {
+  background-color:#3e5c76; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* removing bullets from the list */
 footer ul {
   list-style: none;
 }
 
-footer {
+/* class in the footer */
+.follow {
+  padding: 10px;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
 }
+
+.legal {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
 }
-  
 
-/* Index */
+.arcade {
+  width: 300px;
+}
 
+/* page_apropos.html */
 
+.aPropos h2 {
+  font-family: "Retronoid", Arial, serif;
+}
 
-/* Single */
+/* page_vi.html */
+.vi img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
 
+/* page_trunks.html */
+.trunks img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* page_baguette.html */
+.baguette img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
 
 /* ==========================================================================
    Helper classes
