@@ -96,9 +96,11 @@ p {
 }
 
 /* Utility classes */
-/* .mainBg {
-  background-color: green;
-} */
+
+@font-face {
+  font-family: "Retronoid";
+    src:url("Retronoid.ttf");      
+}
 
 /* body */
 body {
@@ -106,8 +108,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-
 
 /* Header */
 header {
@@ -119,109 +119,98 @@ header {
 }
 
 header h1 {
-
+  font-family: "Retronoid", Arial, serif;
+  color:greenyellow;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Nav */
 nav {
-  background-color: aqua;
+  background-color: #748cab;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
 }
 
 /* main */
 main {
-  background-color: chocolate;
+  background-color: #c5c3c6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
 }
 
+/* first arctile of index */
 .firstArticle {
-  background-image: url(../img/pop_vi.jpg);
-  background-size: cover;
   height: 100px;
   width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
+/* second article of index */
 .secondArticle {
-  background-image: url(../img/montre_gameboy.jpg);
-  background-size: cover;
   height: 100px;
   width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
+/* third article of index */
 .thirdArticle {
-  background-image: url(../img/mug_gogeta.jpg);
-  background-size: cover;
   height: 100px;
   width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* footer */
+/* title (suivez nous) of footer */
+footer h1 {
+  margin: 10px;
+}
+
+
+/* all footer */
+footer {
+  background-color:#3e5c76; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer ul {
   list-style: none;
 }
 
-footer {
-  background-color: brown;
+.follow {
+  padding: 10px;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
 }
 
+.legal {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
 
+.arcade {
+  width: 300px;
+}
 
-/* Index */
+/* page_apropos.html */
 
-
-
-/* Single */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.aPropos h2 {
+  font-family: "Retronoid", Arial, serif;
+}
 
 /* ==========================================================================
    Helper classes
