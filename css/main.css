@@ -95,8 +95,7 @@ p {
   margin: 10px;
 }
 
-/* Utility classes */
-
+/* font for name of company */
 @font-face {
   font-family: "Retronoid";
     src:url("Retronoid.ttf");      
@@ -184,10 +183,12 @@ footer {
   flex-direction: column;
 }
 
+/* removing bullets from the list */
 footer ul {
   list-style: none;
 }
 
+/* class in the footer */
 .follow {
   padding: 10px;
   display: flex;
@@ -210,6 +211,27 @@ footer ul {
 
 .aPropos h2 {
   font-family: "Retronoid", Arial, serif;
+}
+
+/* page_vi.html */
+.vi img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+/* page_trunks.html */
+.trunks img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+/* page_baguette.html */
+.baguette img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
 }
 
 /* ==========================================================================
