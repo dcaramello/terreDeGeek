@@ -14,31 +14,48 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-  <!-- header of the page with a photo and title -->
+
+<!-- HEADER -->
+<!-- header of the page with a photo and title -->
   <header>
-    <h1>Terre De Geek</h1>
+    <h1 class="enseigne">Terre De Geek</h1>
   </header>
+  
+<!-- NAV -->
   <!-- nav of the page with link "a propos" or "index" -->
   <nav>
     <a href="page_apropos.html">A propos</a>
   </nav>
-  <!-- main of the page with information of article or description of TerreDeGeek -->
+
+<!-- MAIN -->
+<!-- main of the page with information of article or description of TerreDeGeek -->
   <main>
-    <section class="firstArticle">
-      <img src="img/pop_vi.jpg" alt="pop">
-      <a href="page_vi.html">Voir l'article</a>
-    </section>
-    <section class="secondArticle">
-      <img src="img/trunks.jpg" alt="trunks">
-      <a href="page_trunks.html">Voir l'article</a>
-    </section>
-    <section class="thirdArticle">
-      <img src="img/baguetteHP.jpg" alt="Baguette">
-      <a href="page_baguette.html">Voir l'article</a>
-    </section>    
+    <div class="articleContainer">
+      <h2 class="enseigne">Nouveautes</h2>
+      <article>
+        <a href="page_vi.html">
+          <img src="img/pop_vi.jpg" alt="pop">
+          </a>
+        <p>Figurine Funko POP league of legend VI : 14.90€</p>
+      </article>
+      <article>
+        <a href="page_trunks.html">
+          <img src="img/trunks.jpg" alt="trunks">
+        </a>
+        <p>Figurine Dragon ball Z Trunks : 24.90€</p>
+      </article>
+      <article>
+        <a href="page_baguette.html">
+          <img src="img/baguetteHP.jpg" alt="Baguette">
+        </a>
+        <p>Baguette lumineuse Harry potter : 39.90€</p>
+      </article>
+    </div>        
   </main>
-  <footer>
-    <!-- footer of the page with links "Suivez nous" and "mentions legales" -->
+
+<!-- FOOTER -->
+<!-- footer of the page with links "Suivez nous" and "mentions legales" -->
+  <footer>    
     <div >
       <h3>Suivez-nous</h3>
       <ul class="follow">
@@ -55,6 +72,8 @@
       <li>E-mail: terredegeek@geekbox.com</li>
   </ul>    
   </footer>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
