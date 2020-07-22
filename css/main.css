@@ -82,18 +82,12 @@ fieldset {
 textarea {
   resize: vertical;
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General rules */
-* {
-  color: black;
-}
-
-p {
-  margin: 10px;
-}
+                        /* utility classes */
+                        /*=================*/
 
 /* font for name of company */
 @font-face {
@@ -101,14 +95,25 @@ p {
     src:url("Retronoid.ttf");      
 }
 
-/* body */
-body {
+.enseigne {
+  font-family: "Retronoid", Arial, serif;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-/* Header */
+/* size of images of article in index.html */
+
+/* /////////////////////////////////////////////////////////////// */
+                        /* General rules */
+                        /*===============*/
+
+p {
+  margin: 10px;
+}
+
+/* ============================Header============================== */
+                  /* in the header of all pages */
 header {
   background-image:url(../img/retro.jpeg);
   background-size: cover;
@@ -117,23 +122,29 @@ header {
   justify-content: center;
 }
 
-header h1 {
-  font-family: "Retronoid", Arial, serif;
+header .enseigne {
   color:greenyellow;
   font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Nav */
+
+
+/* ==============================Nav================================ */
+                      /*in the nav of all pages */
 nav {
   background-color: #748cab;
+  height: 40px;
   display: flex;
   justify-content:space-around;
+  align-items: center;
 }
 
-/* main */
+nav a {
+  color: black;
+}
+
+/* ==============================main=============================== */
+                    /* in the main of index.html */
 main {
   background-color: #c5c3c6;
   display: flex;
@@ -142,53 +153,73 @@ main {
   align-content: space-between;
 }
 
-/* first arctile of index */
-.firstArticle {
-  height: 100px;
-  width: 100px;
+article img {
+  height: 120px;
+  width: 120px;
   margin: 10px;
-  display: flex;
-  justify-content: space-around;
 }
 
-/* second article of index */
-.secondArticle {
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+article {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 10px;
+  border:3px solid #3e5c76;
+  background-color: white;
+  border-radius: 10px;
 }
 
-/* third article of index */
-.thirdArticle {
-  height: 100px;
-  width: 100px;
-  margin: 10px;
-  display: flex;
-  justify-content: space-around;
+.articleContainer .enseigne {
+  color: #3e5c76;
+  font-size: 30px;
 }
 
-/* title (suivez nous) of footer */
+                    /* in the main of page_apropos.html */
+.arcade {
+width: 300px;
+padding: 10px;
+}
+                        
+.aPropos .enseigne {
+  color: #3e5c76;
+  font-size: 30px;
+}
+
+                     /* in the main of all articles pages */
+
+
+.detailArticle img {
+  height: 300px;
+  width: 300px;
+  border: 2px solid #3e5c76;
+}
+
+.detailArticle {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                        
+
+/* =============================footer=============================== */
+                    /*in the footer of all pages */
 footer h1 {
   margin: 10px;
 }
 
-
-/* all footer */
 footer {
+  color: white;
   background-color:#3e5c76; 
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-/* removing bullets from the list */
 footer ul {
   list-style: none;
 }
 
-/* class in the footer */
 .follow {
   padding: 10px;
   display: flex;
@@ -203,37 +234,13 @@ footer ul {
   align-content: stretch;
 }
 
-.arcade {
-  width: 300px;
-}
 
-/* page_apropos.html */
 
-.aPropos h2 {
-  font-family: "Retronoid", Arial, serif;
-}
 
-/* page_vi.html */
-.vi img {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-}
 
-/* page_trunks.html */
-.trunks img {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-}
 
-/* page_baguette.html */
-.baguette img {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-}
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
