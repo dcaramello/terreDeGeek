@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TerreDeGeek/article Vi</title>
+  <title>TerreDeGeek/Contact</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
@@ -23,16 +23,51 @@
 <!-- nav of the page with link "a propos" or "index" -->
   <nav>
     <a href="index.html">Index</a>
-    <a href="contact.html">Contact</a>
     <a href="prestation.html">Prestations</a>
   </nav>
   
 <!-- main of the page with information of article or description of TerreDeGeek -->
     <main>
-      <div class="detailArticle">
-        <img src="img/pop_vi.jpg" alt="pop">
-        <p>Figurine Funko Pop League of Legends Vi 9 cm : 14.90€ . En stock</p> 
-      </div>   
+      <h1 class="enseigne">Nous contacter</h1>
+      <form action="#" method="POST">
+        <div class="saisieForm">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" minlength="2" maxlength="40" required>
+        </div>
+        <div class="saisieForm">
+            <label for="prénom">Prénom :</label>
+            <input type="text" name="prénom" id="prénom" placeholder="Votre prénom" minlength="2" maxlength="40" required>
+        </div>
+        <div class="saisieForm">
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" placeholder="Votre age" min="1" max="115" required>
+        </div>
+        <div class="saisieForm">
+            <label for="téléphone">Téléphone :</label>
+            <input type="tel" name="téléphone" id="téléphone" placeholder="Votre numéro de téléphone" pattern="[0-9]{10}" minlength="0" maxlength="10" required>
+        </div>
+        <div class="saisieForm">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Votre E-mail" required>
+        </div>
+        <div class="saisieForm">
+          <label for="cars">Objet : </label>
+          <select id="cars" name="cars">
+            <option value="volvo">Information</option>
+            <option value="saab">Réclamation</option>
+            <option value="fiat">Partenariat</option>
+            <option value="audi">Autre</option>
+          </select>
+        </div>
+        <div class="saisieForm">
+            <label for="message">Message :</label>
+            <textarea name="Message" id="message" cols="30" rows="10" placeholder="Ecrivez votre message ici" required></textarea>
+        </div>
+        <div class="saisieForm">
+          <input type="submit" value="Envoyer">
+        </div>
+        
+    </form> 
   </main>
 
 <!-- footer of the page with links "Suivez nous" and "mentions legales" -->
