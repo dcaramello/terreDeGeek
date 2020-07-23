@@ -200,7 +200,31 @@ padding: 10px;
     flex-direction: column;
     align-items: center;
 }
-                        
+                      /* in the contact page */
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  border: 2px solid #3e5c76;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.saisieForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form .enseigne {
+  color: #3e5c76;
+  font-size: 30px;
+}
+
+                         */
 
 /* =============================footer=============================== */
                     /*in the footer of all pages */
