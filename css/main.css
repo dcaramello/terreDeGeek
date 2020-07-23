@@ -200,7 +200,7 @@ padding: 10px;
     flex-direction: column;
     align-items: center;
 }
-                      /* in the contact page */
+                      /* in the main of contact page */
 form {
   display: flex;
   align-items: center;
@@ -219,13 +219,29 @@ form {
   margin-bottom: 10px;
 }
 
-form .enseigne {
+main .enseigne {
   color: #3e5c76;
   font-size: 30px;
 }
 
-                         */
+                      /* in the main of prestation page */
+td {
+  border: 3px solid ; 
+  background-color: white;
+}
 
+table {
+  border-collapse: collapse;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table .enseigne {
+  color: #3e5c76;
+  font-size: 30px;
+}
 /* =============================footer=============================== */
                     /*in the footer of all pages */
 footer h1 {
