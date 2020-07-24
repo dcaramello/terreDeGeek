@@ -89,10 +89,14 @@ textarea {
                         /* utility classes */
                         /*=================*/
 
-/* font for name of company */
+/* add new fonts */
 @font-face {
   font-family: "Retronoid";
     src:url("Retronoid.ttf");      
+}
+@font-face {
+  font-family: "CrackedCode" ;
+  src:url("CrackedCode.ttf");
 }
 
 .enseigne {
@@ -100,6 +104,32 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background-color: #3e5c76;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerRight {
+  height: 550px;
+  width: 350px;
+  border: 3px solid #c5c3c6;
+  border-radius: 10px;
+  display: none;
+}
+
+.containerLeft {
+  font-family: "CrackedCode", Arial, serif;
+  display: flex;
+  justify-content: space-between;
+  height: 510px;
+  width: 300px;
+  display: none;
 }
 
 /* size of images of article in index.html */
@@ -112,14 +142,18 @@ p {
   margin: 10px;
 }
 
+
+
+
 /* ============================Header============================== */
                   /* in the header of all pages */
 header {
-  background-image:url(../img/retro.jpeg);
+  background-image:url(../img/space.jpg);
   background-size: cover;
   height: 250px;
   display: flex;
   justify-content: center;
+  padding: auto;
 }
 
 header .enseigne {
@@ -143,6 +177,12 @@ nav a {
   color: black;
 }
 
+nav .button {
+  margin: 1em;
+  border-radius: 5px;
+  padding: 1px;
+}
+
 /* ==============================main=============================== */
                     /* in the main of index.html */
 main {
@@ -152,6 +192,8 @@ main {
   align-items: center;
   align-content: space-between;
 }
+
+
 
 article img {
   height: 120px;
@@ -164,7 +206,7 @@ article {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 10px;
-  border:3px solid #3e5c76;
+  border:3px solid #969ba0;
   background-color: white;
   border-radius: 10px;
 }
@@ -172,6 +214,13 @@ article {
 .articleContainer .enseigne {
   color: #3e5c76;
   font-size: 30px;
+}
+
+main .container .containerLeft .button {
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+  display: none;
 }
 
                     /* in the main of page_apropos.html */
@@ -189,7 +238,13 @@ padding: 10px;
   margin-bottom: 10px;
 }
                      /* in the main of all articles pages */
-
+main .returnIndex .button {
+  border-radius: 5px;
+  font-family: "CrackedCode", Arial, serif;
+  height: 150px;
+  width: 150px;
+  display: none;
+}
 
 .detailArticle img {
   height: 300px;
@@ -275,6 +330,72 @@ footer ul {
   display: flex;
   flex-direction: column;
   align-content: stretch;
+}
+
+
+                  /* ==================================
+                            MEDIA QUERIES
+                  ================================== */
+
+            /* tablette */
+@media screen and (min-width: 768px) {
+  header .enseigne {
+    font-size: 70px;
+  }
+  nav {
+    display: none;
+  }
+  .returnIndex {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main .returnIndex .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .container .containerLeft .button {
+    font-family: "CrackedCode", Arial, serif;
+    display: flex;
+    flex-direction: column; 
+  }
+  .containerLeft {
+    margin-left: 10px;
+    font-family: "CrackedCode", Arial, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+}
+
+              /* Desktop */
+@media screen and (min-width: 1200px) {
+  header .enseigne {
+    font-size: 90px;
+  }
+  nav {
+    display: none;
+  
+  }
+  .articleContainer {
+    position: relative;
+  }
+  .containerLeft{
+    position: absolute;
+    left: 200px;
+  }
+  .containerRight {
+    display: flex;
+    background-image: url(../img/arcade.jpeg);
+    background-size: cover;
+    position: absolute;
+    right: 60px;
+  }
 }
 
 
