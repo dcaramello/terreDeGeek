@@ -132,8 +132,6 @@ textarea {
   display: none;
 }
 
-/* size of images of article in index.html */
-
 /* /////////////////////////////////////////////////////////////// */
                         /* General rules */
                         /*===============*/
@@ -157,8 +155,6 @@ header .enseigne {
   color:greenyellow;
   font-size: 40px;
 }
-
-
 
 /* ==============================Nav================================ */
                       /*in the nav of all pages */
@@ -385,6 +381,7 @@ footer ul {
     flex-direction: column;
     justify-content: space-between;
   }
+  
   
               /* Desktop */
 @media screen and (min-width: 1200px) {
