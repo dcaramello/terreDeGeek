@@ -1,3 +1,5 @@
+## Projet Réalisé pendant ma formation Développeur Web et Web Mobile à l'Afpa de Saint Etienne du Rouvray
+
 # Site web statique de Terre de Geek
 
 ## Compétences acquises
